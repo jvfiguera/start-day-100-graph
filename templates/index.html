@@ -1,0 +1,59 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+<div class="container">
+    <div class="row justify-content-md-center first-row-container">
+        My Job as Data Scientist
+    </div>
+    <div class="row justify-content-md-center second-row-container">
+       <div class="col justify-content-md-center">
+          <div class="col3-container">
+            <figure>
+                <img class="img-mission-spaces" src="/static/images/missions_spaces.jpg" alt="img-mission-spaces">
+                <div class="Layer">
+                  <h3>Data Science</h3>
+                   <ol style="color: aqua;">
+                       <li>Data Cleaning</li>
+                       <li>Plotly</li>
+                       <li>Matplotlib</li>
+                       <li>Numpy</li>
+                       <li>Linear regression</li>
+
+                   </ol>
+                </div>
+              </figure>
+          </div>
+
+           <h1 class="h1-text-left">This work was done to show to my customers my work as Data Scientist and how I can help them to find out insight from theirs dataset or from your database repositories.<br><br>
+               On this webpage, I liked to show a brief behaviour  of the spaces missions during the years 1960 & 2020,  showing different aspect like : Failures missions,
+               success and failures launches per years, Costs of space launches over the time , Cold war space race between the main leaders like USA and  the USSR,
+               spaces launches by countries, so as well the main organizations that helped them during the space race.<br><br>
+               This dataset was scraped from nextspaceflight.com and includes all the space missions since the beginning of Space Race between the USA and the Soviet Union in 1957!
+           </h1>
+       </div>
+
+        <div class="col-md-auto justify-content-md-center">
+          <h1 class="h1-space-race-title">SPACE RACE AMONG TOP LEADERS SINCE 1957</h1>
+            {% for idx in range(0,graphs_web_list|length,1): %}
+            <section>
+                <div>
+                    <iframe id="inlineFrameExample"
+                            title="Inline Frame Example"
+                            style="border: none;"
+                            width= "{{ graphs_web_list[idx]['dimention'][0] }}"
+                            height="{{ graphs_web_list[idx]['dimention'][1] }}"
+                            src="{{ graphs_web_list[idx]['graphname'] }}">
+                    </iframe>
+                </div>
+            </section>
+          {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+{% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,101 @@
+html,body{
+background-color: #F9F9F9;
+}
+
+.container{
+  height: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+}
+
+.first-row-container{
+height:8%;
+width: 100%;
+background-color: #4C3A51;
+color: #F9F9F9;
+font-family: 'Great Vibes';
+font-size: 50px;
+}
+
+.second-row-container {
+  height: 92%;
+  width: 100%;
+  padding-top: 0.5%;
+}
+
+.h1-text-left{
+font-size: 14px;
+font-family: 'Montserrat';
+font-weight: lighter;
+font-stretch: expanded;
+text-align: justify;
+position: relative;
+top: 0.5%;
+}
+
+.img-mission{
+width: 100%;
+height: 6%;
+}
+
+/* Nuevo efecto hover de la imagen*/
+
+.col3-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col3-container figure{
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 16px 25px rgba(0,0,0,0,50);
+  cursor: pointer;
+}
+
+ .col3-container figure img{
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.col3-container figure .Layer{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(11,103,123,0.6);
+transition: all 500ms ease-out;
+opacity: 0;
+visibility: hidden;
+text-align: center;
+}
+
+.col3-container figure:hover > .Layer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.col3-container figure:hover > img {
+  transform: scale(1.4,1.4);
+}
+
+.col3-container figure:hover > .Layer h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+.col3-container figure .Layer h3{
+  color: #D1512D;
+  transition: all 500ms ease-out;
+}
+
+.h1-space-race-title{
+color     :#4C3A51;
+text-align: center;
+font-size : 200%;
+font-family: 'Montserrat';
+}
