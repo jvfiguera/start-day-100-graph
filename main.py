@@ -1,11 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, flash, request
-import numpy as np
 import pandas as pd
-import plotly.express as px
 from flask_bootstrap import Bootstrap
 from GraphClass import Graphs,graphs_toshow_list
-#import matplotlib.pyplot as plt
-#import seaborn as sns
 
 app = Flask(__name__)
 Bootstrap(app)
