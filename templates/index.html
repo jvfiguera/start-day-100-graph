@@ -37,8 +37,8 @@
           <h1 class="h1-space-race-title">SPACE RACE AMONG TOP LEADERS SINCE 1957</h1>
             {% for idx in range(0,graphs_web_list|length,1): %}
             <section>
-                <div>
-                    <iframe id="inlineFrameExample"
+                <div class="iframe-graph">
+                    <iframe id="inlineFrameExample"}
                             title="Inline Frame Example"
                             style="border: none;"
                             width= "{{ graphs_web_list[idx]['dimention'][0] }}"
