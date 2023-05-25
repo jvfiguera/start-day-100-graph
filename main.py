@@ -70,14 +70,14 @@ graph.mth_graph_compare_two_variables(pDf_data01   = df_launches_Success
                                       ,pHeight     =500
                                      )
 # Temporal comment
-# graph.mth_graph_sunburst(pDf_sunburst   =df_sunburst
-#                          ,pFilename     ='graph-003.html'
-#                          ,pWidth        =900
-#                          ,pHeight       =500
-#                          ,pPath         =['Country', 'Organisation', 'Mission_Status']
-#                          ,pValues       ='Mission_Status_Count'
-#                          ,pHover_data   =['Country']
-#                          )
+graph.mth_graph_sunburst(pDf_sunburst   =df_sunburst
+                         ,pFilename     ='graph-003.html'
+                         ,pWidth        =900
+                         ,pHeight       =500
+                         ,pPath         =['Country', 'Organisation', 'Mission_Status']
+                         ,pValues       ='Mission_Status_Count'
+                         ,pHover_data   =['Country']
+                         )
 
 graph.mth_graph_line(pDf_data   =df_data_price
                      ,pX_collumn='Year'
@@ -89,24 +89,24 @@ graph.mth_graph_line(pDf_data   =df_data_price
                      ,pColor    =''
                      )
 # Temporal comment
-# graph.mth_graph_line(pDf_data   =df_data_usa_ussr
-#                      ,pX_collumn='Year'
-#                      ,pY_collumn='Count_Launches'
-#                      ,pWidth    =900
-#                      ,pHeight   =500
-#                      ,pFilename ='graph-005.html'
-#                      ,pTitle    ='Cold War Space Race: USA vs USSR'
-#                      ,pColor    ='Country'
-#                      )
+graph.mth_graph_line(pDf_data   =df_data_usa_ussr
+                     ,pX_collumn='Year'
+                     ,pY_collumn='Count_Launches'
+                     ,pWidth    =900
+                     ,pHeight   =500
+                     ,pFilename ='graph-005.html'
+                     ,pTitle    ='Cold War Space Race: USA vs USSR'
+                     ,pColor    ='Country'
+                     )
 # Temporal comment
-# graph.mth_graph_choropleth(pDf_data         =df_launches_by_country
-#                            ,pLocations      ='Country'
-#                            ,pColor          ='Launches number'
-#                            ,pFilename       ='graph-006.html'
-#                            ,pWidth          =900
-#                            ,pHeight         =500
-#                            ,pTitle          ='Number of Launches by Country'
-#                            )
+graph.mth_graph_choropleth(pDf_data         =df_launches_by_country
+                           ,pLocations      ='Country'
+                           ,pColor          ='Launches number'
+                           ,pFilename       ='graph-006.html'
+                           ,pWidth          =900
+                           ,pHeight         =500
+                           ,pTitle          ='Number of Launches by Country'
+                           )
 #print(graphs_toshow_list)
 #print(graphs_toshow_list[2]['graphname'])
 #print(graphs_toshow_list[2]['dimention'][0])
